@@ -225,7 +225,7 @@ docker-compose exec app npm run dev
 Nếu gặp vấn đề trong quá trình cài đặt, hãy kiểm tra:
 
 1. Docker và Docker Compose đã được cài đặt đúng phiên bản
-2. Ports 8000 và 3306 không bị占用 bởi ứng dụng khác
+2. Ports 8000 và 3306 không dùng bị bởi ứng dụng khác
 3. File `src/.env` được cấu hình đúng
 
 ---
