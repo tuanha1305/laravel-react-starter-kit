@@ -13,8 +13,8 @@ Một project Laravel + React được tối ưu hóa với Docker Compose, sử
 ### 1. Clone repository
 
 ```bash
-git clone <URL-repository>
-cd react-starter-kit
+git clone https://github.com/tuanha1305/laravel-react-starter-kit.git
+cd laravel-react-starter-kit
 ```
 
 ### 2. Cấu hình environment
