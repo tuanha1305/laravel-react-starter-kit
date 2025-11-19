@@ -2,12 +2,108 @@ import { dashboard, login, register } from '@/routes';
 import { type SharedData } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 
+import gameBundleImg from "@/assets/game-bundle-1.jpg";
+import unityBundleImg from "@/assets/unity-bundle.jpg";
+import foxStudioImg from "@/assets/fox-studio-bundle.jpg";
+import puzzleGameImg from "@/assets/puzzle-game.jpg";
+import casualBundleImg from "@/assets/casual-bundle.jpg";
+import hyperCasualImg from "@/assets/hyper-casual.jpg";
+
 export default function Welcome({
     canRegister = true,
 }: {
     canRegister?: boolean;
 }) {
     const { auth } = usePage<SharedData>().props;
+
+    const featuredProducts = [
+    {
+      id: 1,
+      title: "AI Games' SUPER Bundle Offer: 10 Premium Games worth $550 USD",
+      price: 165,
+      image: gameBundleImg,
+      category: "Unity",
+      discount: "70% OFF",
+      rating: 0,
+    },
+    {
+      id: 2,
+      title: "Sale Bundle Offer: 6 AMAZING GAMES worth $394 USD",
+      price: 118,
+      image: unityBundleImg,
+      category: "Unity",
+      discount: "70% OFF",
+      rating: 0,
+    },
+    {
+      id: 3,
+      title: "Fox Game Studio Unity Bundle: 22 Most Wanted Projects",
+      price: 199,
+      image: foxStudioImg,
+      category: "Unity",
+      discount: "90% OFF",
+      rating: 0,
+    },
+    {
+      id: 4,
+      title: "Unity Bundle: 75% OFF Game Kit Bundle",
+      price: 756,
+      image: casualBundleImg,
+      category: "Unity",
+      discount: "75% OFF",
+      rating: 0,
+    },
+    {
+      id: 5,
+      title: "Puzzle Match Game Kit Bundle",
+      price: 149,
+      image: puzzleGameImg,
+      category: "Unity",
+      rating: 0,
+    },
+    {
+      id: 6,
+      title: "Unity Bundle: Discount up to 60% OFF",
+      price: 160,
+      image: unityBundleImg,
+      category: "Unity",
+      discount: "60% OFF",
+      rating: 0,
+    },
+    {
+      id: 7,
+      title: "Unity Bundle: 46 Complete Source Codes",
+      price: 2368,
+      image: casualBundleImg,
+      category: "Unity",
+      rating: 0,
+    },
+    {
+      id: 8,
+      title: "CA Unity Bundle: 70% OFF",
+      price: 79,
+      image: puzzleGameImg,
+      category: "Unity",
+      discount: "70% OFF",
+      rating: 0,
+    },
+    {
+      id: 9,
+      title: "Friday Exclusive Offer: Bundle Sale",
+      price: 199,
+      image: foxStudioImg,
+      category: "Unity",
+      rating: 0,
+    },
+    {
+      id: 10,
+      title: "Hyper Casual Game Template King",
+      price: 49,
+      image: hyperCasualImg,
+      category: "Unity",
+      rating: 0,
+    },
+  ];
 
     return (
         <>
